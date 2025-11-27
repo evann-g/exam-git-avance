@@ -2,6 +2,24 @@ package handlers
 
 import (
 	"html/template"
+	"net/http"
+    "main/data"
+)
+
+var books = []data.Book{
+    {1, "The Go Programming Language", "Alan Donovan", 2015},
+    {2, "Clean Code", "Robert C. Martin", 2008},
+    {3, "The Pragmatic Programmer", "Andrew Hunt", 1999},
+}
+
+func ContactHandler(w http.ResponseWriter, r *http.Request) {
+    tmpl := template.Must(template.ParseFiles("templates/contact.html"))
+    tmpl.Execute(w, nil)
+}
+package handlers
+
+import (
+	"html/template"
 	"main/data"
 	"net/http"
 	"strconv"

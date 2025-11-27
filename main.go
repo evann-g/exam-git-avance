@@ -9,6 +9,7 @@ import (
 func main() {
 	log.Println("Serveur Go en démarrage...")
 
+	http.HandleFunc("/contact", handlers.ContactHandler)
 	http.HandleFunc("/book", handlers.BookHandler)
 	http.HandleFunc("/", handlers.HomeHandler)
 
