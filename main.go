@@ -9,6 +9,7 @@ import (
 func main() {
 	log.Println("Serveur Go en démarrage...")
 
+	http.HandleFunc("/book", handlers.BookHandler)
 	http.HandleFunc("/", handlers.HomeHandler)
 
 	log.Println("Serveur lancé sur http://localhost:8080")
