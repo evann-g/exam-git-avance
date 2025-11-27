@@ -9,9 +9,9 @@ import (
 func main() {
 	log.Println("Serveur Go en démarrage...")
 
-	http.HandleFunc("/contact", handlers.ContactHandler)
-	http.HandleFunc("/book", handlers.BookHandler)
 	http.HandleFunc("/", handlers.HomeHandler)
+	http.HandleFunc("/book", handlers.BookHandler)
+	http.HandleFunc("/contact", handlers.ContactHandler)
 
 	log.Println("Serveur lancé sur http://localhost:8080")
 	log.Fatal(http.ListenAndServe(":8080", nil))
