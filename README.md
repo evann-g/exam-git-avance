@@ -1,11 +1,11 @@
-# Campus Library — Examen Git
+Exam - git - avance
 
-Ce repository contient plusieurs branches avec du code pré-écrit.
+contributeur :
+    Evann Guilhem
 
-🎯 Votre objectif : reconstruire le projet final en utilisant **exclusivement Git** :
-- fork
-- pull requests
-- merges
-- résolution de conflits
-- tags
-- historique propre
+Le projet hébergé sur le dépôt Git est un mini serveur web représentant une bibliothèque, le site permet d’afficher la liste des livres avec 4 champs :
+    ID
+    Title
+    Author
+    Year
+Le site possède aussi une page pour chaque livre, pour les afficher individuellement.
